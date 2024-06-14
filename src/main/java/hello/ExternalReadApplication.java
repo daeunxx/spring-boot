@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Import;
 //@Import(MyDataSourceConfigV1.class)
 //@Import(MyDataSourceConfigV2.class)
 @Import(MyDataSourceConfigV3.class)
-@SpringBootApplication(scanBasePackages = "hello.datasource")
+@SpringBootApplication(scanBasePackages = {"hello.datasource", "hello.pay"})
 @ConfigurationPropertiesScan("hello")
 public class ExternalReadApplication {
 
