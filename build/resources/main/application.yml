@@ -1,4 +1,11 @@
 management:
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
   endpoints:
     web:
       exposure:
@@ -9,3 +16,8 @@ management:
     health:
       show-components: always
 #      show-details: always
+
+info:
+  app:
+    name: hello-actuator
+    companay: daeun
