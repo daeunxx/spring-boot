@@ -21,3 +21,7 @@ info:
   app:
     name: hello-actuator
     companay: daeun
+
+logging:
+  level:
+    hello.controller: debug
