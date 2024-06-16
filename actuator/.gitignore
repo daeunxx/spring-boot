@@ -354,3 +354,7 @@ gradle-app.setting
 ### Gradle Patch ###
 # Java heap dump
 *.hprof
+
+.bin
+.lock
+git.properties
