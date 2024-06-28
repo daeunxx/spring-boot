@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class OrderRunner implements ApplicationRunner {
 
-  private final OrderService orderServicer;
+  private final OrderService orderService;
 
   @Override
   public void run(ApplicationArguments args) throws Exception {
-    orderServicer.order(1000);
+    orderService.order(1000);
   }
 }

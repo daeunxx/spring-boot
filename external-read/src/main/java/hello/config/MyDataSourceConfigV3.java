@@ -5,10 +5,12 @@ import hello.datasource.MyDataSourcePropertiesV2;
 import hello.datasource.MyDataSourcePropertiesV3;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @Slf4j
 @RequiredArgsConstructor
+@EnableConfigurationProperties(MyDataSourcePropertiesV3.class)
 public class MyDataSourceConfigV3 {
 
   private final MyDataSourcePropertiesV3 properties;
