@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Import;
 //@Import(OrderConfigV3.class)
 //@Import({OrderConfigV4.class, StockConfigV1.class})
 @Import({OrderConfigV4.class, StockConfigV2.class})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "hello.controller")
 public class ActuatorApplication {
 
   public static void main(String[] args) {
