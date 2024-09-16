@@ -2,3 +2,4 @@ org.example.config.autoconfig.DispatcherServletConfig
 org.example.config.autoconfig.TomcatWebServerConfig
 org.example.config.autoconfig.JettyWebServerConfig
 org.example.config.autoconfig.PropertyPlaceholderConfig
+org.example.config.autoconfig.ServerPropertyConfig
