@@ -4,7 +4,7 @@ import hello.servlet.HelloServlet;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletRegistration.Dynamic;
 
-public class AppInitV1Servlet implements AppInit{
+public class AppInitV1Servlet implements AppInit {
 
   @Override
   public void onStartUp(ServletContext servletContext) {
