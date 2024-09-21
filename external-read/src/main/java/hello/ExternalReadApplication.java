@@ -21,8 +21,8 @@ import org.springframework.context.annotation.Import;
 @ConfigurationPropertiesScan("hello")
 public class ExternalReadApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ExternalReadApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(ExternalReadApplication.class, args);
+  }
 
 }

@@ -16,14 +16,15 @@ public class MyDataSourcePropertiesV2 {
   private String password;
   private Etc etc;
 
-  public MyDataSourcePropertiesV2(String url, String username, String password, @DefaultValue Etc etc) {
+  public MyDataSourcePropertiesV2(String url, String username, String password,
+      @DefaultValue Etc etc) {
     this.url = url;
     this.username = username;
     this.password = password;
     this.etc = etc;
   }
 
-  @Data
+  @Getter
   public static class Etc {
 
     private int maxConnection;
