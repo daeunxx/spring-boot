@@ -4,7 +4,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import java.sql.Driver;
 import javax.sql.DataSource;
 import org.example.config.ConditionalMyOnClass;
-import org.example.config.EnableMyConfigProperties;
+import org.example.config.EnableMyConfigurationProperties;
 import org.example.config.MyAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnSingleCandidate;
@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @MyAutoConfiguration
 @ConditionalMyOnClass("org.springframework.jdbc.core.JdbcOperations")
-@EnableMyConfigProperties(MyDataSourceProperties.class)
+@EnableMyConfigurationProperties(MyDataSourceProperties.class)
 @EnableTransactionManagement
 public class DataSourceConfig {
 

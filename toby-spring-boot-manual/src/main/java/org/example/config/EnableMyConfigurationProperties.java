@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Import;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Import(MyConfigPropertiesImportSelector.class)
-public @interface EnableMyConfigProperties {
+@Import(MyConfigurationPropertiesImportSelector.class)
+public @interface EnableMyConfigurationProperties {
 
   Class<?> value();
 }
