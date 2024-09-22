@@ -16,6 +16,6 @@ public class OrderConfigV2 {
 
   @Bean
   public CountedAspect countedAspect(MeterRegistry meterRegistry) {
-    return new CountedAspect();
+    return new CountedAspect(meterRegistry);
   }
 }
